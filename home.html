@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	<title>cricketWorld</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel='stylesheet' type="text/css" href='attach/home.css'>
+	<script src="attach/sub.js"></script>
+	<script src="attach/top.js"></script>
+
+</head>
+<body>
+
+<!-----------------------------NavigationBar-------------------------------------->
+
+<div class="Navigation">
+	<ul>
+		<img src="img/logo.png" id="logo">
+		<li><a href="About_us.html">About Us</a></li>
+		<li><a href="shopping.html">Shop</a></li>
+		<li><a href="Web-CWK.html">Cricketers</a></li>
+		<li><a href="cricket_quiz.html">Quiz</a></li>
+		<div class="dropdown">
+        <button class="dropbtn">Information
+        </button>
+       <div class="dropdown-content">
+      <a href="history.html">History of cricket</a>
+      <a href="Rules.html">Rules in cricket</a>
+      <a href="special_moments.html">Special Moments</a>
+	  <a href="Informationpage.html">Types of Cricket matches</a>
+    </div> </div>
+		<li><a href="#">Home</a></li>
+
+	</ul>
+</div>
+<!----------------------------------SlideShow------------------------------------>
+
+<div class="slideshow-container" position = "absolute" >
+
+
+  <div class="mySlides fade">
+    <div class="Slide-Number">1 / 5</div>
+    <img src="img/img_1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="Slide-Number">2 / 5</div>
+    <img src="img/img_2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="Slide-Number">3 / 5</div>
+    <img src="img/img_3.jpg" style="width:100%">
+  </div>
+
+   <div class="mySlides fade">
+    <div class="Slide-Number">4 / 5</div>
+    <img src="img/img_4.jpg" style="width:100%">
+  </div>
+
+   <div class="mySlides fade">
+    <div class="Slide-Number">5 / 5</div>
+    <img src="img/img_5.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+<script>
+ var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2300);
+}
+</script>
+
+
+<!--------------------------------------------------------------------------------Paragraph----------------------------------------------------------------------------------------->
+
+<div class= "paragraph">
+
+Cricket is a bat and ball game played between two teams, 11 players each, on a field which has a rectangular 22-yard-long pitch in the centre. The game is played by 120 million players world-wide making it the second most popular sport in the world. The purpose of the game is to score more runs than your opposing team.
+A Cricket match is divided into periods called innings. It is decided before the game begins, if both teams will have one or two innings. During the innings one team bats while the other fields. All 11 players on the fielding team are on the pitch at the same time however only two batsmen are the field at any one time.
+Team captains toss a coin to decide who should bat first.
+Cricket fields tend to be oval in shape.  The end which is marked off is called the boundary, with the rectangle “pitch” in the centre.
+At each end of the pitch are the wickets, 22 yards apart.  A bowling crease is in line with the wicket and the batting or popping crease is 4ft in front of the wicket.
+
+</div>
+
+<br><br><br><br>
+
+
+<!--------------------------------------------------Student Details------------------------------------>
+
+<div class="Student Details"></div>
+
+		<h1><center> Student Details </h1></center>
+		<br><br><br>
+
+	<div class= "team">
+		<div class="Team-Members">
+            <img src ="img/student1.jpeg" alt="">
+            <div class ="Team-Information">
+            <h2>Manula Haputhanthrie</h2>
+            <p> UOW ID : W1790305 </p>
+			<p>IIT ID : 20191046</p>
+            <p>Student No : 01</p>
+            </div>
+        </div>
+
+
+		<div class ="Team-Members">
+            <img src ="img/student2.jpeg" alt="">
+            <div class ="Team-Information">
+            <h2>Ravindu Kodithuwakku</h2>
+            <p>UOW ID : W1790300</p>
+			<p>IIT ID : 20191039</p>
+            <p>Student No : 02</p>
+            </div>
+        </div>
+
+
+		<div class ="Team-Members">
+            <img src ="img/student3.jpeg" alt="">
+            <div class ="Team-Information">
+            <h2>B.D.Tharuka Jayasooriya</h2>
+            <p>UOW ID : W1789998 </p>
+			<p>IIT ID : 20191049 </p>
+            <p>Student No : 03</p>
+            </div>
+        </div>
+
+
+		<div class ="Team-Members">
+            <img src ="img/student4.jpeg" alt="">
+            <div class ="Team-Information">
+            <h2>K.N.Shinoli Perera</h2>
+            <p>UOW ID : W1790003</p>
+			<p>IIT ID : 20191081 </p>
+            <p>Student No : 04</p>
+            </div>
+        </div>
+		</div>
+
+<br><br><br>
+
+<!--------------------------------------------------------------------Pop-up Window------------------------------------------->
+
+<div class = "content">
+
+	<div class = "Form">
+	<form Name ="Form" id = "form" method = "dialog" onsubmit = "return validateForm()">
+
+	<label><b> First Name : </b></label><br>
+	<input type= "text" id="FirstName" name="First Name" placeholder="Enter Your Name">
+	<br><br>
+
+	<label><b>Emai: </b></label><br>
+	<input type= "text" id="email" name="email" placeholder="Enter Your Email">
+ 	<br><br>
+
+	<label><b>Comments : </b></label><br>
+	<textarea type= "comment" id="comment" name="comment" placeholder="Enter Your Comments" ></textarea>
+<br><br>
+
+
+<!-----------------------------------------------Rate---------------------------->
+
+<h4> Rate Our Website </h4>
+
+<fieldset class="rating">
+    <input type="radio" id="star5" name="rating" value="5" onclick="starValue(5)"/>
+	<label class = "full" for="star5" title="Awesome - 5 stars"></label>
+    <input type="radio" id="star4" name="rating" value="4" onclick="starValue(4)"/>
+	<label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+    <input type="radio" id="star3" name="rating" value="3" onclick="starValue(3)"/>
+	<label class = "full" for="star3" title="Meh - 3 stars"></label>
+    <input type="radio" id="star2" name="rating" value="2" onclick="starValue(2)"/>
+	<label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+    <input type="radio" id="star1" name="rating" value="1" onclick="starValue(1)"/>
+	<label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+</fieldset>
+
+<br><br><br><br><br><br>
+
+	<input type="Submit" value="Submit">
+	<input type="Reset" value="Reset">
+
+</form>
+</div>
+</div>
+<br><br><br>
+<script src="home/home.js">
+                
+</script>
+<!-----------------------social media ------------------------>
+
+<div class="icon-bar">
+
+	<a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
+	<a href="https://www.instagram.com/" class="instagram"><i class="fa fa-instagram"></i></a>
+	<a href="https://twitter.com/i/flow/signup" class="twitter"><i class="fa fa-twitter"></i></a>
+	<a href="https://www.linkedin.com/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+	<a href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a>
+</div>
+
+
+<!------------------------------footer-------------->
+
+<footer>
+    <div class="footer-content">
+      <div class="part">
+
+				<div class="part">
+					<ul>
+						<li>Quick access</li>
+						<li><a href="cricket_quiz.html">Quiz</a></li>
+						<li><a href="Web-CWK.html">Cricketers</a></li>
+						<li><a href="shopping.html">Shop</a></li>
+						<li><a href="About_us.html">About us</a></li>
+						<li><a href="Sitemap.html">Site Map</a></li>
+					</ul>
+				</div>
+
+        <ul>
+          <li>Team Members</li>
+          <li><a href="mydetails.html">Manula </a></li>
+          <li><a href="student_2.html">Ravindu </a></li>
+          <li><a href="taskpage.html">Tharuka </a></li>
+          <li><a href="Developer-shinoli.html">Shinoli </a></li>
+        </ul>
+      </div>
+
+</footer>
+
+<div class="editor">
+	<label><b>This Page made by :</b></label>
+	<h4><a href="student_2.html">Ravindu Ransara</a></h4>
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"> <img src ="img/top.png" alt=""></button>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+ h1{
+        font-size:50px;
+        text-align: center;
+	    font-family:Comic Sans MS, cursive, sans-serif;
+	   }
+	
+      h2{
+        text-align: left;
+        font-family:verdana;
+        font-size:28px;
+        margin-left: 30px;
+       }
+	
+	 h3{
+        text-align:center;
+        font-size:25px;
+       }
+    
+    #stu1{
+        position:fixed;
+        margin-left:90px;
+        border:solid;
+		border-color:red;
+       }
+	   
+    #stu2{
+        position:fixed;
+        margin-left:450px;
+        border:solid;
+		border-color:red;
+       }
+	   
+    #stu3{
+        position:fixed;
+        margin-left:810px;
+        border:solid;
+		border-color:red;
+       }
+	   
+    #stu4{
+        position:fixed;
+        margin-left:1170px;
+        border:solid;
+		border-color:red;
+       }
+	   
+    #id{
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:16px;
+		text-align:center;
+       }
+	   
+
+	.devlpr{
+ 
+		position:absolute;
+		background-color:#ffe6e6;
+		right:0;
+		bottom:10px;
+		line-height: 0;
+		font-family:arial;
+		padding: 12px;
+ 
+		}
+
+	.devlpr label{
+		font-size:13px;
+		}
+
+	.devlpr span{
+		font-size:15px;
+		}

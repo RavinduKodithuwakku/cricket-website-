@@ -1,0 +1,217 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+        <title>Shop Online</title>
+        <meta charset = 'UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="attach/shopping.css" />
+		<link rel="stylesheet" type="text/css" href="attach/navigation.css" />
+        <script src="attach/shopping.js"></script>
+        
+    </head>
+      
+    <body>
+   
+  		 <div class="header" id="head">
+           <img src="img/logo.png" id="logo">
+	       <a href="Sitemap.html">Sitemap </a>
+           <a href="About_us.html">About us </a>
+	       <a href="Web-CWK.html">Cricketers </a>
+	       <a href="shopping.html">Shop </a>
+	       <a href="cricket_quiz.html">Quiz </a>
+		   
+	      <div class="dropdown">
+            <button class="dropbtn" id="info">Information</button>
+             <div class="dropdown-content">
+              <a href="history.html">History of cricket</a>
+              <a href="Rules.html">Rules in cricket</a>
+              <a href="special_moments.html">Special Moments</a>
+	          <a href="Informationpage.html">Types of Cricket matches</a>
+             </div> 
+	      </div>
+           <a href="home.html">Home</a>
+         </div>
+        
+          <a name="top"></a>
+		  
+		  			
+          <div>
+            <input type="button" value="Increase Font" onclick="increaseFontSize()">
+            <input type="button" value="Decrease Font" onclick="decreaseFontSize()">
+		  </div>
+
+ 
+        <section class="container">
+            <h2 class="section-header" id="title">SHOP ONLINE</h2>
+			
+            <div class="items" id="text">
+            
+                <div class="item">
+                    <img class="item-image" src="img/CAball.jpg">
+                    <span class="item-title">CA Super League Cricket Ball</span>
+                    <div class="item-details">
+                        <span class="item-price">$21.95</span>
+                        <button class="btn btn-primary item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <img class="item-image" src="img/KKB.jpg">
+                    <span class="item-title">Kookaburra Beast Cricket Bat</span>  
+                    <div class="item-details">
+                        <span class="item-price">$225.00</span>
+                        <button class="btn btn-primary item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <img class="item-image" src="img/mrf.jpeg">
+                    <span class="item-title">MRF Genius Cricket Bat</span>
+                    <div class="item-details">
+                        <span class="item-price">$213.00</span>
+                        <button class="btn btn-primary item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                
+                <div class="item">
+               	    <img class="item-image" src="img/sfpad.jpg">
+                    <span class="item-title">SF Cricket Pads</span>
+                    <div class="item-details">
+                        <span class="item-price">$60.95</span>
+                        <button class="btn btn-primary item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <img class="item-image" src="img/ss.jpg">
+                    <span class="item-title">SS Yorker Leather Cricket Ball</span>
+                    <div class="item-details">
+                        <span class="item-price">$19.00</span>
+                        <button class="btn btn-primary item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <img class="item-image" src="img/gm.jpg">
+                    <span class="item-title">GM 808 L.E Cricket Batting Gloves</span>
+                    <div class="item-details">
+                        <span class="item-price">$18.97</span>
+                        <button class="btn btn-primary item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+				 
+                <div class="item">
+                    <img class="item-image" src="img/ssbat.jpg">
+                    <span class="item-title">SS Master 100 Kashmir Cricket Bat</span>
+                    <div class="item-details">
+                        <span class="item-price">$222.00</span>
+                        <button class="btn btn-primary item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+				 
+                <div class="item">
+                    <img class="item-image" src="img/rbk.jpg">
+                    <span class="item-title">Reebok 509 Cricket Batting Gloves</span>
+                    <div class="item-details">
+                        <span class="item-price">$19.00</span>
+                        <button class="btn btn-primary item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+				 
+                <div class="item">
+                    <img class="item-image" src="img/helmet.jpg">
+                    <span class="item-title">SG Optipro Cricket Helmet</span>
+                    <div class="item-details">
+                        <span class="item-price">$66.99</span>
+                        <button class="btn btn-primary item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        <section class="container">
+		
+            <h2 class="section-header" id="crt">CART</h2>
+			
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column" id="itm">Item</span>
+                <span class="cart-price cart-header cart-column" id="prc">Price</span>
+                <span class="cart-quantity cart-header cart-column" id="qun">Quantity</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title" id="totl">Total</strong>
+                <span class="cart-total-price" id="price">$ 0.00</span>
+            </div>
+            <button class="btn btn-primary btn-proceed"  onclick="on()" type="button">Proceed to Checkout</button>
+        </section>
+        
+        <section class="container">
+        
+        	<div id="overlay">
+          
+      		 <div id="content">
+               <label class="overlay-label">First name:</label>
+               <input class="overlay-text" type="text" name="fname" id="fname" placeholder="First Name"><br><br>
+        
+               <label class="overlay-label">Last Name:</label>
+               <input type="text" class="overlay-text" name="lname" id="lname" placeholder="Last Name"><br><br>
+        
+               <label class="overlay-label">Email:</label>
+               <input type="email"  class="overlay-text" name="email" id="email" placeholder="Email Address"><br><br>
+               
+               <label class="overlay-label">Contact No:</label>
+               <input type="tel"  class="overlay-text" name="cntact" id="cntact" placeholder="Contact Number"><br><br>
+               
+               <label class="overlay-label">Delivery Address:</label>
+               <input type="text" class="overlay-text" name="address" id="address" placeholder="Delivery Address"><br><br>
+              
+               <label class="overlay-label">Payment Method:</label>
+               
+               <div class="radio">
+                   <input type="radio" id="ppl" name="pmnt" value="ppl"/>
+                   <label class="overlay-label">Paypal</label>
+                   <input type="radio" id="crc" name="pmnt" value="crc"/>
+                   <label class="overlay-label">Credit Card</label><br><br>
+                    <input type="radio" id="dbc" name="pmnt" value="dbc"/>
+                   <label class="overlay-label">Debit Card</label><br><br>   
+               </div>
+               
+               <label class="overlay-label">Card Holder:</label>
+               <input type="text" class="overlay-text" name="crdhld" id="crdhld" placeholder="Card Holder"><br><br>
+              
+               <label class="overlay-label">Card Number:</label>
+               <input type="text" class="overlay-text" name="crdnum" id="crdnum" placeholder="Card Number"><br><br>
+	           
+               <div>
+                   <button class="ovrl-butn" onClick="validation()" >Place Order</button>
+                   <button class="ovrl-butn" onClick="reSet()">Reset</button>
+                   <button class="ovrl-butn" onClick="off()">Exit</button>    
+         	   </div>
+      
+             </div>
+           
+            </div>
+            
+        </section>
+        
+		  <div class="footer">
+	  
+	        <div class="devlpr">
+              <label>This Page is developed by :</label>
+              <h4><a href="mydetails.html">Manula Pamuditha</a></h4>
+              <span>w1790305</span>
+            </div>
+			
+	          <a href="#top"> Back to top </a>
+			  
+          </div> 
+         
+   </body>
+   
+</html>

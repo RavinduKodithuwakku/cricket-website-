@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='stylesheet' type='text/css' href='attach\student4-2.css'>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>cricketWorld:Best Cricketers</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top
+<i class="material-icons" style="font-size:20px;color:white">arrow_upward</i>
+</button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+<div class="grid-container">
+<div class="header">
+    <img src="img\logo.png" id="logo">
+	<a href="Sitemap.html">Sitemap </a>
+    <a href="About_us.html">About us </a>
+	<a href="Web-CWK.html">Cricketers </a>
+	<a href="shopping.html">Shop </a>
+	<a href="cricket_quiz.html">Quiz </a>
+	<div class="dropdown">
+    <button class="dropbtn">Information
+    </button>
+    <div class="dropdown-content">
+      <a href="history.html">History of cricket</a>
+      <a href="Rules.html">Rules in cricket</a>
+      <a href="special_moments.html">Special Moments</a>
+	  <a href="Informationpage.html">Types of Cricket matches</a>
+    </div> </div>
+    <a href="home.html">Home</a>
+</div>
+
+<div class="gallery">
+<img class="slideshow" src="img\stadium.jpg" style="width:100%;">
+<h1 id="i1"> Most famous cricketers of this decade </h1>
+ </div>
+
+<div class="photoIcons">
+<p class="info"> Cricket is a game with a long history, therefore among these years many talented cricketers have come and gone,
+Many records in several categories like batting average,most numver of wickets and etc. Therefore the list of famous cricketers is almost infinite.
+So we have decided to give you some brief information of some of the most famous cricketers of this decade, who have showed incredible talents and 
+sportsmanship throught their careers.All of them hold several records and they are from several countries around the world.</p> 
+</div>
+
+<div class="row">
+<p>Select the cricketer you want to know: </p> 
+<div class="choice" onClick="Virat()">
+    <div class="images">
+    <img src="img\wp4051771-virat-kohli-ipl-wallpapers.jpg" class="img1" /> </div>
+    <div class="name">
+     <p class="name">Virat Kohli </p> </div> </div>
+
+<div class="choice" onClick="Sachin()">
+<div class="images">
+<img src="img\wp3990026-sachin-tendulkar-wallpapers.jpg" class="img1" /> </div>
+<div class="name" >
+<p> Sachin Tendulkar</p> </div> </div>
+
+<div class="choice" onClick="ABD()">
+<div class="images">
+<img src="img\wp5590245-ab-de-villiers-hd-android-wallpapers.jpg" class="img1" /> </div>
+<div class="name" >
+<p>AB De Villers </p> </div>
+</div>
+
+<div class="choice" onClick="Sanga()">
+<div class="images">
+<img src="img\wp4975381-kumar-sangakkara-wallpapers.jpg" class="img1" /> </div>
+<div class="name" >
+<p> Kumar Sangakkara</p> </div> 
+</div>
+
+<div class="choice" onClick="Gayle()">
+<div class="images">
+<img src="img\wp4172248-chris-gayle-wallpapers.jpg" class="img1" /> </div>
+<div class="name" >
+<p>Chris Gayle </p> </div>
+</div> </div>
+
+<div class="show">
+<div class="mainimg">
+<div id="selectImg"> </div>
+<div id="selectName"></div>
+<div class="descp"id="order"> </div>
+</div> </div>
+
+<form id="form">
+<p> </p>
+<label id="colorChange"> Select background-color: </label>
+<select id="bgcolor" onChange="blueBg(this.form)">
+<option>Default</option>
+<option>Blue </option>
+<option> Green</option>
+<option> Cream</option>
+<option>Yellow </option>
+<option>Red </option>
+</select> 
+
+<label id="colorChange">Select font-color </label>
+<select id="textcolor" onChange="fontchange(this.form)">
+<option> black</option>
+<option>red </option>
+<option>blue </option>
+<option> green</option>
+<option>grey</option>
+</select>
+</form> 
+<div class="footer">
+ <a href="Developer-shinoli.html">
+ <i class="material-icons" style="font-size:40px;color:white">assignment_ind</i>
+</a>
+<a href="Sitemap.html" id="icon">
+ <i class="fa fa-sitemap" style="font-size:40px;color:white" ></i> </a>
+ </div>
+</div>
+
+<script>
+function getSelectedValue( selectList ) {
+            return selectList[selectList.selectedIndex].value;
+        }
+
+function getSelectedText( selectList ) {
+            return selectList.options[selectList.selectedIndex].text;
+        }
+		
+function blueBg(formRef){
+             selectedOption = getSelectedValue(formRef.bgcolor);
+			 if (selectedOption=="Default")
+			 {
+			 document.body.style.backgroundColor="#fff";
+			 }
+			 if (selectedOption=="Blue")
+			 {
+			 document.body.style.backgroundColor="#2222bdbf";
+			 }
+			 else if (selectedOption=="Green"){
+			 document.body.style.backgroundColor="#7ae47e";
+			 }
+			 else if (selectedOption=="Cream"){
+			 document.body.style.backgroundColor="#ffeb3b75";
+			 }
+			 else if (selectedOption=="Yellow"){
+			 document.body.style.backgroundColor="#f5e23f";
+			 }
+			 else if (selectedOption=="Red"){
+			 document.body.style.backgroundColor="#f44336f5";
+			 }
+			 
+}
+function fontchange(formRef){
+            selectedColor = getSelectedValue(formRef.textcolor);
+			if (selectedColor=="black")
+			{
+			document.body.style.color="black";
+			}
+			if (selectedColor=="red")
+			{
+			document.body.style.color="#8a1111";
+			}
+			if (selectedColor=="blue")
+			{
+			document.body.style.color="#081663";
+			}
+			if (selectedColor=="green")
+			{
+			document.body.style.color="#0c3a0e";
+			}
+			if (selectedColor=="grey")
+			{
+			document.body.style.color="#2d2727";
+			}
+}
+
+function Virat(){
+           document.getElementById("selectName").innerHTML= "Virat Kohli";
+		   document.getElementById("order").innerHTML= "<p>Virat Kohli (born 5 November 1988) is an Indian cricketer who currently captains the India national team. A right-handed top-order batsman, Kohli is regarded as one of the best batsmen in the world.He plays for Royal Challengers Bangalore in the Indian Premier League(IPL), and has been the team's captain since 2013. Since October 2017, he has been the top-ranked ODI batsman in the world and is currently 2nd in Test rankings with 886 points.Among Indian batsmen, Kohli has the best ever Test rating (937 points), ODI rating (911 points) and T20I rating (897 points).</p>";
+}
+function Sachin(){
+           document.getElementById("selectName").innerHTML= "Sachin Tendulkar";
+		   document.getElementById("order").innerHTML= "<p>Sachin Ramesh Tendulkar ; born 24 April 1973) is a former international cricketer from India and a former captain of the Indian national team. He is widely regarded as one of the greatest batsmen in the history of cricket.He is the highest run scorer of all time in International cricket. Considered as the world's most prolific batsman of all time,he is the only player to have scored one hundred international centuries, the first batsman to score a double century in a One Day International (ODI), the holder of the record for the most runs in both Test and ODI cricket, and the only player to complete more than 30,000 runs in international cricket</p>";
+}
+function ABD(){
+           document.getElementById("selectName").innerHTML= "A.B De Villiers";
+		   document.getElementById("order").innerHTML= "<p>Abraham Benjamin de Villiers (born 17 February 1984), is a South African cricketer. In limited overs cricket he is an attacking batsman.[2] He was named as the ICC ODI Player of the Year three times during his 15-year international career. His name was also featured in Wisden Cricketers of the Decade at the end of 2019.De Villiers began his international career as a wicket-keeper-batsman, but he has played most often solely as a batsman. He batted at various positions in the batting order, but predominantly in the middle-order. Noted as one of the most innovative and destructive batsmen in the modern era, De Villiers is known for a range of unorthodox shots, particularly behind the wicket-keeper.</p>";
+}
+function Sanga(){
+           document.getElementById("selectName").innerHTML= "Kumar Sangakkara";
+		   document.getElementById("order").innerHTML= "<p>Kumara Chokshanada Sangakkara (born 27 October 1977) is a cricket commentator, cricketer and former player and captain of the Sri Lankan national team. He is regarded as one of the greatest batsmen of all time.Sangakkara scored 28,016 runs in international cricket across all formats in a career that spanned 15 years.At retirement, he was the second-highest run-scorer in ODI cricket and sixth-highest run scorer in Test cricket.Sangakkara is a left-handed top-order batsman and was wicket-keeper for many years in his career. Sangakkara holds many test records, having been the fastest to various run milestones in test cricket.[8] Sangakkara's partnership with Mahela Jayawardene holds the current batting partnership record in Test cricket and the most wicket keeping dismissals in ODI cricket</p>";
+}
+function Gayle(){
+           document.getElementById("selectName").innerHTML= "Chris Gayle";
+		   document.getElementById("order").innerHTML= "<p>Christopher Henry Gayle, OD (born 21 September 1979) is a Jamaican cricketer who plays international cricket for the West Indies.[3] Gayle captained the West Indies Test side from 2007 to 2010. Considered as one of the greatest batsmen ever in Twenty20 (T20) cricket, Gayle has set numerous records across all three formats of the game. He is the most capped player for the West Indies in international cricket and is the only player to score a triplet of centuries – a triple hundred in Tests, double hundred in ODIs and a hundred in T20Is./p>";
+}
+</script>
+
+
+</body>
+</html>
